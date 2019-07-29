@@ -143,7 +143,7 @@ print("length = %d\nmax_val = %c\nmin_val = %c\n"
     % (length,max_val,min_val))
 
 '''
-MAPS:
+MAPS/DICTIONARIES:
     list of key value pairs of any data types
     cannot concat with +
 '''
@@ -159,11 +159,10 @@ print("Map of length %d with value at key = %s" % (length,val1))
 all_keys = map.keys()      #get all keys
 all_values = map.values()    #get all values
 
-print("all keys: ", *all_keys)
-print("all values: ", *all_values, "\n")
+print("all keys: ", all_keys)
+print("all values: ", all_values, "\n")
 
 del map["key"]  #delete key and value at key
-
 
 
 '''
@@ -306,6 +305,29 @@ from functools import reduce
 sum = reduce(lambda x,y: x + y, int_list)
 print("Sum = %d\n" % sum)
 
+'''
+LIBRARIES and MODULES
+
+    Libraries are a collection of functions we can call.
+
+    import LIBRARY
+'''
+#always import libraries up top
+import math
+import random
+
+#MATH library
+# calling a function in math, type library then function_name
+#     so we know where to look for the function we want to use
+x = math.sqrt(16) #square root, expected 4
+y = math.floor(123.325) #round down, expected 123
+print(x)
+print(y)
+
+#RANDOM library
+some_list = ["Data", "Mining", "Privacy", "SQL"]
+pick = random.choice(some_list) #pick an item at random
+print(pick)
 
 '''
 GET INPUT FROM USER:
@@ -344,6 +366,11 @@ test_file.close()
 #delete file
 import os
 os.remove("test.txt")
+
+#JSON Files (import json)
+jsonFile = open("file.json", "r")
+fileData = json.load(jsonFile) #use fileData (list of dicionaryies)
+jsonFile.close()
 
 '''
 OBJECTS:
