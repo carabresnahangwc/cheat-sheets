@@ -1,11 +1,29 @@
 # cheat-sheets
 
 ## Basic Git Commands
-- git clone [url]: copy repository
-- git status: show status of files in repository
-- git add [filename]: prepare file for next commit
-- git commit -m "[commit message]": commit changes
-- git push: update files with changes from commit
-- git pull: get changes and update local repository
+- copy repository
+```
+git clone [url]
+```
+- show status of files in repository
+```
+git status
+```
+- prepare file for next commit
+```
+git add [filename]
+```
+- commit changes
+```
+git commit -m "[commit message]"
+```
+- update files with changes from commit
+```
+git push
+```
+- get changes and update local repository
+```
+git pull
+```
 
 https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf
